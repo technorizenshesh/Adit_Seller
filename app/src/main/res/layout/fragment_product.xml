@@ -1,0 +1,72 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lk.aditi.ecom_seller.ui.fragments.product.ProductFragment">
+
+    <LinearLayout
+        android:paddingBottom="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center"
+                 android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="My Product" />
+
+            <ImageView
+                android:visibility="gone"
+                 android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_icon_search"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"/>
+            <ImageView
+                android:id="@+id/iv_add_product"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16sp"
+                android:src="@drawable/ic_addbg" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_Edit"-->
+<!--        android:layout_marginRight="16sp"-->
+<!--        android:gravity="end"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/red"-->
+<!--        android:text="Edit"-->
+<!--        android:textSize="16sp"-->
+<!--        android:fontFamily="@font/regular"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginVertical="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_products"/>
+</LinearLayout>

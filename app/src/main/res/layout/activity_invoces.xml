@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lk.aditi.ecom_seller.ui.activity.profile.InvocesActivity">
+
+    <LinearLayout
+        android:paddingBottom="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+         <ImageView
+            android:layout_marginTop="16dp"
+            android:id="@+id/iv_back"
+            android:layout_gravity="center_vertical"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_shape"/>
+
+
+        <TextView
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Invoices" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/bggray"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginVertical="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Select Invoice generating Date"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular"/>
+        
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:src="@drawable/ic_calender"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_Invoices"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>

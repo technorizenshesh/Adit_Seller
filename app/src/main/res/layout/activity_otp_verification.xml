@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:background="@drawable/bg_background_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lk.aditi.ecom_seller.ui.activity.authentication.OtpVerificationActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/iv_Back"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_shape"/>
+
+        <ImageView
+
+            android:layout_marginRight="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginVertical="40dp"
+            android:src="@drawable/ic_logo" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="16dp"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="@string/enter_verification_code" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="10dp"
+                style="@style/EditTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:text="@string/pin_warn" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.chaos.view.PinView
+                    android:id="@+id/pvOtp"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:itemBackground="@color/white"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/regular"
+                    app:cursorColor="@color/black"
+                    app:itemCount="6"
+                    app:itemRadius="5dp"
+                    android:elevation="10dp"
+                    app:itemSpacing="6dp"
+                    app:cursorWidth="1dp"
+                    app:lineWidth="1dp"
+                    app:lineColor="@color/gray"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp"
+                android:gravity="end"
+                android:fontFamily="@font/regular"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/red"
+                android:layout_marginRight="18sp"
+                android:id="@+id/tv_Resend"/>
+
+            <TextView
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTINUE"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:id="@+id/tv_Continue"
+                android:fontFamily="@font/regular"
+                android:background="@drawable/bg_solid_red"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loader"
+        android:id="@+id/loader_layout"/>
+
+</RelativeLayout>

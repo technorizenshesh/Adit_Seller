@@ -1,0 +1,251 @@
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_background_main"
+    android:layout_height="match_parent"
+    tools:context="lk.aditi.ecom_seller.ui.fragments.profile.ProfileFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="80dp"
+            android:id="@+id/cv_Image"
+            android:layout_marginLeft="16dp"
+            android:layout_marginVertical="16dp"
+            android:src="@drawable/avatar"/>
+
+        <LinearLayout
+            android:layout_marginRight="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:text="David Spade"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_No"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="David Spade"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Edit_Profile"
+        android:layout_marginVertical="20dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_edit_profile"/>
+
+        <TextView
+            android:layout_marginHorizontal="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_icon_arrow_right"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_Camera"
+        android:layout_marginVertical="20dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_camera"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginHorizontal="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="Camera"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_marginHorizontal="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="Accept Orders using Camera"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="12sp"
+             app:on="false"
+             app:colorOn="#EB4035"
+            app:colorBorder="@color/red"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Order_History"
+        android:layout_marginVertical="20dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_order_history"/>
+
+        <TextView
+            android:layout_marginHorizontal="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="Order History"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_icon_arrow_right"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Invoces"
+        android:layout_marginVertical="20dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_invoices"/>
+
+        <TextView
+            android:layout_marginHorizontal="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="Invoices"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_icon_arrow_right"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_marginVertical="20dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_logout"/>
+
+        <TextView
+            android:layout_marginHorizontal="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="Log Out"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

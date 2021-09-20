@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="lk.aditi.ecom_seller.ui.fragments.addproduct.AddCustomProductFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/EditTextTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:text="Product Name" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/bold"
+                android:text="In Stock"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_icon_arrow_down" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="Enter Product Name"
+        />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red"/>
+
+    <TextView
+        android:layout_marginTop="32dp"
+        style="@style/EditTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Product Price" />
+
+    <EditText
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="Product Price"
+        />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red"/>
+
+    <TextView
+        android:layout_marginTop="32dp"
+        style="@style/EditTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Upload Image" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/watch"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:text="+"
+            android:textColor="@color/red"
+            android:background="@drawable/bg_red_stroke"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="32dp"
+        style="@style/EditTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Auto Suggest" />
+
+    <LinearLayout
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_red_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <EditText
+            android:layout_marginTop="10dp"
+             android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Enter Suggestion if any..."
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:gravity="center"
+        android:id="@+id/tv_Submit"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:fontFamily="@font/regular"
+        android:background="@drawable/bg_solid_red"
+        android:textColor="@color/white"/>
+
+
+
+</LinearLayout>
